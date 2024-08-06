@@ -26,18 +26,18 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
-.container .login-form {
+.container .form {
     padding: 2rem;
 }
 
-.login-form h3 {
+.form h3 {
     font-size: 2rem;
     font-weight: 500;
     text-align: center;
     margin-bottom: 1.5rem;
 }
 
-.login-form input {
+.form input {
     height: 60px;
     width: 100%;
     padding: 0 15px;
@@ -48,21 +48,21 @@ body {
     outline: none;
 }
 
-.login-form input:hover{
+.form input:hover {
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
 
-.login-form a {
+.form a {
     font-size: 16px;
     color: #116D6E;
     text-decoration: none;
 }
 
-.login-form a:hover {
+.form a:hover {
     text-decoration: underline;
 }
 
-.login-form input.button {
+.form input.button {
     color: #fff;
     background: #116D6E;
     font-size: 1.2rem;
@@ -72,6 +72,36 @@ body {
     cursor: pointer;
 }
 
-.login-form input.button:hover {
+.form input.button:hover {
     background: #0d6162;
+}
+
+.container .register {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~.register {
+    display: block;
+}
+
+#check:checked~.login {
+    display: none;
+}
+
+.signup {
+    font-size: 17px;
+    text-align: center;
+}
+
+.signup label {
+    color: #116D6E;
+    cursor: pointer;
+}
+
+.signup label:hover {
+    text-decoration: underline;
 }
